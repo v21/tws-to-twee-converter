@@ -4,10 +4,7 @@ import pickle, sys
 def main():
     tws_file = sys.argv[1]
     out = ""
-    
-    for arg in sys.argv:
-        print(arg)
-    
+        
     with open(tws_file) as f:
         p = pickle.load(f)
         for tiddler in p["storyPanel"]["widgets"]:
