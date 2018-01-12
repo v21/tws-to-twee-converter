@@ -11,3 +11,8 @@ To use, do something like:
 python twsimporter.py twinefile.tws > newtweefile.tw
 ````
 
+Also accepts a `-twee2` option, which will include the position of each passage in `twee2` output file format:
+
+````
+python twsimporter.py twinefile.tws -twee2 > newtweefile.tw2
+````
