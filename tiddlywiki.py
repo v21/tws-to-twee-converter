@@ -287,7 +287,7 @@ class Tiddler:
 		return output
 		
 		
-	def toTwee (self):
+	def toTwee (self, pos = None):
 		"""Returns a Twee representation of this tiddler."""
 		output = u':: ' + self.title
 		
@@ -298,6 +298,9 @@ class Tiddler:
 			output = output.strip()
 			output += u']'
 			
+		if pos and len(pos) == 2:
+			output += ' <' + str(pos[0]) + ',' + str(pos[1]) + '>'
+
 		output += u"\n" + self.text + u"\n\n\n"
 		return output
 		
