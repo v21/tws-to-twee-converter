@@ -299,7 +299,7 @@ class Tiddler:
 			output += u']'
 			
 		if pos and len(pos) == 2:
-			output += ' <' + str(pos[0]) + ',' + str(pos[1]) + '>'
+			output += ' <%d,%d>' % (pos[0], pos[1])
 
 		output += u"\n" + self.text + u"\n\n\n"
 		return output
